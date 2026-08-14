@@ -1,10 +1,5 @@
-# DPI Engine (Python Port)
-
-This is a Python recreation of the C++ `Packet_analyzer` / DPI Engine project.
-It mirrors the original project's file structure and logic, just written in
-Python (using `scapy` instead of hand-parsing bytes).
-
-## Folder structure (mirrors the original C++ layout)
+# DPI Engine Using Python
+## Folder structure 
 
 ```
 packet_analyzer_python/
@@ -48,13 +43,6 @@ python -m src.dpi_mt test_dpi.pcap output.pcap --block-app YouTube --lbs 2 --fps
 ```
 
 `--lbs` = number of Load Balancer threads, `--fps` = number of Fast Path threads
-(same idea as the C++ version's thread architecture: Reader → LB → FP → Writer).
-
-> Note: Python's GIL means these threads don't run fully in parallel the way
-> C++ threads do. This port matches the original *architecture* faithfully; if
-> you need true parallel speed, the code would need `multiprocessing` instead
-> of `threading`.
-
 ## All available options
 
 | Flag              | Meaning                          |
