@@ -84,6 +84,7 @@ Flags can be repeated to add multiple rules, e.g. `--block-app YouTube --block-a
 
 ============================================================
                     PROCESSING REPORT
+============================================================
 
 Total Packets : 8
 Total Bytes   : 612
@@ -95,6 +96,7 @@ Dropped       : 2
 
 ============================================================
               APPLICATION BREAKDOWN (by flow)
+============================================================
 
 Facebook      : 1    16.7%
 Google        : 1    16.7%
