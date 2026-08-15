@@ -82,25 +82,24 @@ python -m src.dpi_mt test_dpi.pcap output.pcap --block-app YouTube --lbs 2 --fps
 
 Flags can be repeated to add multiple rules, e.g. `--block-app YouTube --block-app TikTok`.
 
+### Example output
+
 ============================================================
                     PROCESSING REPORT
 ============================================================
+Total Packets: 8
+Total Bytes:   612
+TCP Packets:   7
+UDP Packets:   1
+Forwarded:     6
+Dropped:       2
 
-Total Packets : 8
-Total Bytes   : 612
-TCP Packets   : 7
-UDP Packets   : 1
-Forwarded     : 6
-Dropped       : 2
-
-
-============================================================
               APPLICATION BREAKDOWN (by flow)
+------------------------------------------------------------
+Facebook       1    16.7%   ###
+Google         1    16.7%   ###
+GitHub         1    16.7%   ###
+Netflix        1    16.7%   ###
+YouTube        1    16.7%   ###
+TikTok         1    16.7%   ###  (BLOCKED)
 ============================================================
-
-Facebook      : 1    16.7%
-Google        : 1    16.7%
-GitHub        : 1    16.7%
-Netflix       : 1    16.7%
-YouTube       : 1    16.7%
-TikTok        : 1    16.7%   (BLOCKED)
