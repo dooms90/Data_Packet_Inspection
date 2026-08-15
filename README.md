@@ -84,22 +84,27 @@ Flags can be repeated to add multiple rules, e.g. `--block-app YouTube --block-a
 
 ### Example output
 
+```text
 ============================================================
                     PROCESSING REPORT
 ============================================================
-Total Packets: 8
-Total Bytes:   612
-TCP Packets:   7
-UDP Packets:   1
-Forwarded:     6
-Dropped:       2
 
+Total Packets : 8
+Total Bytes   : 612
+TCP Packets   : 7
+UDP Packets   : 1
+Forwarded     : 6
+Dropped       : 2
+
+------------------------------------------------------------
               APPLICATION BREAKDOWN (by flow)
 ------------------------------------------------------------
-Facebook       1    16.7%   ###
-Google         1    16.7%   ###
-GitHub         1    16.7%   ###
-Netflix        1    16.7%   ###
-YouTube        1    16.7%   ###
-TikTok         1    16.7%   ###  (BLOCKED)
+
+Facebook      : 1    16.7%   ###
+Google        : 1    16.7%   ###
+GitHub        : 1    16.7%   ###
+Netflix       : 1    16.7%   ###
+YouTube       : 1    16.7%   ###   (BLOCKED)
+TikTok        : 1    16.7%   ###   (BLOCKED)
+
 ============================================================
