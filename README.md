@@ -25,16 +25,19 @@ Because modern web traffic is encrypted, this engine doesn't try to read message
 
 ## Project structure
 
+## Project Structure
+
+```text
 packet_analyzer_python/
 ├── src/
-│ ├── types.py # FiveTuple, Flow, app-name signatures
-│ ├── pcap_reader.py # Read/write .pcap files
-│ ├── packet_parser.py # Extract IP/TCP/UDP fields
-│ ├── sni_extractor.py # Extract SNI (TLS) / Host (HTTP)
-│ ├── rule_manager.py # Blocking rules (IP / app / domain)
-│ ├── connection_tracker.py # Flow table (5-tuple -> Flow)
-│ ├── main_working.py # Simple (single-threaded) engine
-│ └── dpi_mt.py # Multi-threaded engine
+│   ├── types.py # FiveTuple, Flow, app-name signatures
+│   ├── pcap_reader.py # Read/write .pcap files
+│   ├── packet_parser.py # Extract IP/TCP/UDP fields
+│   ├── sni_extractor.py # Extract SNI (TLS) / Host (HTTP)
+│   ├── rule_manager.py # Blocking rules (IP / app / domain)
+│   ├── connection_tracker.py # Flow table (5-tuple -> Flow)
+│   ├── main_working.py # Simple (single-threaded) engine
+│   └── dpi_mt.py # Multi-threaded engine
 ├── generate_test_pcap.py # Creates a sample test_dpi.pcap
 ├── requirements.txt
 └── README.md
