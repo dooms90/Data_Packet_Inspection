@@ -108,7 +108,6 @@ Netflix       : 1    16.7%
 YouTube       : 1    16.7%      (BLOCKED)
 TikTok        : 1    16.7%      (BLOCKED)
 
-
 [Detected Domains/SNIs]
 
 www.youtube.com  -> YouTube
