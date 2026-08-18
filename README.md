@@ -23,7 +23,6 @@ Available in two modes: a simple single-threaded engine and a multi-threaded pip
 
 Because modern web traffic is encrypted, this engine doesn't try to read message contents. Instead, it relies on the one piece of plaintext every HTTPS connection reveals up front: the **Server Name Indication (SNI)**, sent during the TLS handshake so the server knows which website's certificate to present. That's enough to identify *what* a connection is for, without ever decrypting it.
 
-
 ## Project Structure
 
 ```text
