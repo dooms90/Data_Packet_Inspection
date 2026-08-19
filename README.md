@@ -2,7 +2,6 @@
 
 A **Deep Packet Inspection (DPI) engine** that reads network traffic captures (`.pcap` files), identifies which app or website each connection belongs to — even over encrypted HTTPS — and applies configurable blocking rules by IP, app, or domain.
 
-
 Available in two modes: a simple single-threaded engine and a multi-threaded pipeline modeled after real-world traffic-shaping architectures (Reader → Load Balancer → Fast Path → Writer).
 
 ## Features
