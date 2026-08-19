@@ -40,7 +40,6 @@ packet_analyzer_python/
 ├── requirements.txt
 └── README.md
 
-
 ## Installation
 
 ```bash
