@@ -17,7 +17,7 @@ Available in two modes: a simple single-threaded engine and a multi-threaded pip
 - **Detailed reporting** — per-run summary of total packets/bytes, forwarded vs. dropped counts, per-app traffic breakdown, and (in multi-threaded mode) per-thread load statistics
 - **Built-in test data generator** — no need for a real capture to try it out; `generate_test_pcap.py` builds a sample `.pcap` with realistic TLS/HTTP traffic
 
-## How it works 
+## How it works
 
 .pcap file -> Parse headers -> Match to flow -> Extract SNI/Host -> Check rules -> Forward or Drop -> output.pcap
 
