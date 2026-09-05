@@ -80,7 +80,7 @@ python -m src.dpi_mt test_dpi.pcap output.pcap --block-app YouTube --lbs 2 --fps
 
 Flags can be repeated to add multiple rules, e.g. `--block-app YouTube --block-app TikTok`.
 
-### Example output
+### Example Output
 
 ```text
 ============================================================
